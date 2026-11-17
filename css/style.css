@@ -126,7 +126,7 @@ a {
 /* Featured application */
 
 .feature {
-    background-color: var(--light-blue);
+    background-color: #D5D4F5;
     text-align: left;
 
     padding: 24px 20px 0;
@@ -765,4 +765,117 @@ a {
 
 }
 
-/* 
+
+/* ==========================================
+   CLIENT UPDATE 1 - PROFESSIONAL FOOTER
+   ========================================== */
+
+.site-footer {
+    width: 100%;
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 35px 20px 18px;
+}
+
+.footer-container {
+    width: min(100%, 1120px);
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+
+    text-align: center;
+}
+
+.footer-brand h2 {
+    color: #FFFFFF;
+    font-size: 23px;
+    margin: 0 0 10px;
+}
+
+.footer-brand p {
+    color: #DDDDDD;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.footer-social p {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.footer-social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 48px;
+    height: 48px;
+
+    background-color: #9693E6;
+    border-radius: 50%;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.footer-social a:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 0 12px rgba(150, 147, 230, 0.8);
+}
+
+.footer-social img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.footer-bottom {
+    grid-column: 1 / -1;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 18px;
+}
+
+.footer-bottom p {
+    max-width: none;
+    margin: 0;
+    font-size: 12px;
+    color: #DDDDDD;
+}
+
+/* Tablet and desktop footer */
+
+@media (min-width: 768px) {
+
+    .footer-container {
+        grid-template-columns: 2fr 1fr;
+        align-items: center;
+        text-align: left;
+    }
+
+    .footer-social {
+        text-align: right;
+    }
+
+    .footer-bottom {
+        text-align: center;
+    }
+
+}
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .footer-social a {
+        transition: none;
+    }
+
+}
+
